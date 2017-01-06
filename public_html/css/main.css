@@ -1,0 +1,32 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 3, 2017, 6:57:59 PM
+    Author     : Derek
+*/
+
+:root {
+    --name-bg: #333;
+    --main-text: #BBB;
+    --bg-color: #132533;
+    --border-style: 3px outset #999999;
+}
+
+body, html {
+    color: var(--main-text);
+    font-family: "Open Sans", sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+a:hover {
+    font-style: italic;
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--main-text);
+}
