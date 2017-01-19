@@ -4,18 +4,27 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : Jan 5, 2017, 4:52:42 PM
+    Created on : Jan 5, 2017, 4:56:11 PM
     Author     : Derek
 */
+body, html {
+  overflow: hidden; }
+
+.bg-sq {
+  width: 33.33%;
+  height: 33.33vh;
+  float: left;
+  display: block;
+  position: absolute; }
+  .bg-sq div a {
+    padding: 5px;
+    text-decoration: none;
+    color: var(--main-text); }
+
 #sq1 {
-  background-color: var(--checker-bg);
+  background-color: var(--bg-color);
   top: 0;
   left: 0; }
-  #sq1 :hover {
-    transform-origin: top left;
-    border-bottom-right-radius: 10px;
-    border-right: var(--border-style);
-    border-bottom: var(--border-style); }
 
 #sq2 {
   background-image: url("../images/lake.jpg");
@@ -23,7 +32,7 @@ and open the template in the editor.
   left: 33.33%; }
 
 #sq3 {
-  background-color: var(--checker-bg);
+  background-color: var(--bg-color);
   top: 0;
   right: 0; }
 
@@ -47,7 +56,7 @@ and open the template in the editor.
   right: 0; }
 
 #sq7 {
-  background-color: var(--checker-bg);
+  background-color: var(--bg-color);
   bottom: 0;
   left: 0; }
 
@@ -57,12 +66,58 @@ and open the template in the editor.
   left: 33.33%; }
 
 #sq9 {
-  background-color: var(--checker-bg);
+  background-color: var(--bg-color);
   bottom: 0;
   right: 0; }
 
 #sq2, #sq4, #sq6, #sq8 {
   background-size: cover;
   background-repeat: no-repeat; }
+
+#sq1:hover, #sq3:hover, #sq5:hover, #sq7:hover, #sq9:hover {
+  transform: scale(1.25);
+  z-index: 10;
+  transition: .45s;
+  transition-timing-function: linear; }
+
+#sq1:hover {
+  transform-origin: top left;
+  border-bottom-right-radius: 10px;
+  border-right: var(--border-style);
+  border-bottom: var(--border-style); }
+
+#sq3:hover {
+  transform-origin: top right;
+  border-bottom-left-radius: 10px;
+  border-left: var(--border-style);
+  border-bottom: var(--border-style); }
+
+#sq5:hover {
+  border: var(--border-style); }
+
+#sq7:hover {
+  transform-origin: bottom left;
+  border-top-right-radius: 10px;
+  border-right: var(--border-style);
+  border-top: var(--border-style); }
+
+#sq9:hover {
+  transform-origin: bottom right;
+  border-top-left-radius: 10px;
+  border-left: var(--border-style);
+  border-top: var(--border-style); }
+
+.holder {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  vertical-align: middle;
+  text-align: center; }
+  .holder h1 {
+    font-size: 5vw; }
+  .holder h2 {
+    font-size: 3vw; }
+  .holder h3 {
+    font-size: 2.5vw; }
 
 /*# sourceMappingURL=homepage.css.map */
